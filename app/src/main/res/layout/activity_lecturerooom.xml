@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lec">
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_lec"
+            android:layout_width="63dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom|center"
+            android:background="#00ff0000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/b_lecture"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        //강의동 리스트 레이아웃
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:background="@drawable/layout_background"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:rowCount="5">
+
+            <Button
+                android:id="@+id/button01"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:onClick="onClick"
+                android:text="@string/title01"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button02"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:onClick="onClick"
+                android:text="@string/title02"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button03"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:onClick="onClick"
+                android:text="@string/title03"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button04"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#00ff0000"
+                android:onClick="onClick"
+                android:text="@string/title04"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button05"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#00ff0000"
+                android:onClick="onClick"
+                android:text="@string/title05"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button06"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#00ff0000"
+                android:onClick="onClick"
+                android:text="@string/title06"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button07"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#00ff0000"
+                android:onClick="onClick"
+                android:text="@string/title07"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button08"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#00ff0000"
+                android:onClick="onClick"
+                android:text="@string/title08"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button09"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#00ff0000"
+                android:onClick="onClick"
+                android:text="@string/title09"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button10"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#00ff0000"
+                android:onClick="onClick"
+                android:text="@string/title10"
+                android:textSize="20sp" />
+
+
+        </GridLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

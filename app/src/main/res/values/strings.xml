@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">TMapTest</string>
+    <string name="title01">1_진리관</string>
+    <string name="title02">2_성신관</string>
+    <string name="title03">3_애경관</string>
+    <string name="title04">4_예지관</string>
+    <string name="title05">5_덕문관</string>
+    <string name="title06">6_광교관</string>
+    <string name="title07">7_집현관</string>
+    <string name="title08">8_육영관</string>
+    <string name="title09">9_호연관</string>
+    <string name="title10">종합강의동</string>
+
+    <string name="pro01">진성애교양대학</string>
+    <string name="pro02">인문대학</string>
+    <string name="pro03">예술체육대학</string>
+    <string name="pro04">사회과학대학</string>
+    <string name="pro05">소프트웨어경영대학</string>
+    <string name="pro06">융합과학대학</string>
+    <string name="pro07">창의공과대학</string>
+    <string name="pro08">관광문화대학</string>
+
+    <string name="bus1">기숙사정류장</string>
+    <string name="bus2">매표소정류장</string>
+    <string name="bus3">경기탑정류장</string>
+    <string name="bus4">테니스장정류장</string>
+    <string name="bus5">9강정류장</string>
+    <string name="bus6">광교역정류장</string>
+
+    <string name="etc1">e스퀘어</string>
+    <string name="etc2">감성코어</string>
+
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="textview_message" formatted="false">%1$5s %2$15s %3$20s %4$25s\n</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>
