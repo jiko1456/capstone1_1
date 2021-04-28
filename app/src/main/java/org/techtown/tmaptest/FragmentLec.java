@@ -86,6 +86,61 @@ public class FragmentLec extends Fragment implements org.techtown.tmaptest.onBac
             }
         });
 
+        button06 = view.findViewById(R.id.button06);
+        button06.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                FragmentRoom_6 room6= new FragmentRoom_6();
+                transaction.replace(R.id.tmap,room6);
+                transaction.commit();
+            }
+        });
+
+        button07 = view.findViewById(R.id.button07);
+        button07.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                FragmentRoom_7 room7= new FragmentRoom_7();
+                transaction.replace(R.id.tmap,room7);
+                transaction.commit();
+            }
+        });
+
+        button08 = view.findViewById(R.id.button08);
+        button08.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                FragmentRoom_8 room8= new FragmentRoom_8();
+                transaction.replace(R.id.tmap,room8);
+                transaction.commit();
+            }
+        });
+
+        button09 = view.findViewById(R.id.button09);
+        button09.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                FragmentRoom_9 room9= new FragmentRoom_9();
+                transaction.replace(R.id.tmap,room9);
+                transaction.commit();
+            }
+        });
+
+        button10 = view.findViewById(R.id.button10);
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                FragmentRoom_10 room10= new FragmentRoom_10();
+                transaction.replace(R.id.tmap,room10);
+                transaction.commit();
+            }
+        });
+
 
         return view;
     }

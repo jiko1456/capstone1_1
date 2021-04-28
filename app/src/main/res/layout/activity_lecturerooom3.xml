@@ -33,7 +33,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3_애경관"
+                android:text="@string/title03"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:gravity="center"

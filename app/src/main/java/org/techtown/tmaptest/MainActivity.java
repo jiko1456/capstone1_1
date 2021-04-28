@@ -120,7 +120,10 @@ public class MainActivity extends AppCompatActivity implements TMapGpsManager.on
         time.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //시간표
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                FragmentTimetable Ftime = new FragmentTimetable();
+                transaction.replace(R.id.tmap, Ftime);
+                transaction.commit();
             }
         });
 

@@ -30,7 +30,7 @@ public class FragmentRoom_7 extends Fragment implements onBackPressedListener {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.activity_lecturerooom1,container,false);
+        view = inflater.inflate(R.layout.activity_lecturerooom7,container,false);
 
         roomInfo_content=view.findViewById(R.id.roominfo_content);
         RoomInfoAdapter adapter= new RoomInfoAdapter();

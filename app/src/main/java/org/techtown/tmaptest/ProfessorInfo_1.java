@@ -111,7 +111,10 @@ public class ProfessorInfo_1 extends Fragment implements onBackPressedListener {
     }
     @Override
     public void onBackPressed() {
-        goToMain();
+        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+        FragmentProfessor Fpro = new FragmentProfessor();
+        transaction.replace(R.id.tmap, Fpro);
+        transaction.commit();
     }
 
     //프래그먼트 종료
