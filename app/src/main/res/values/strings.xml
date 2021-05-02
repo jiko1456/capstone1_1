@@ -18,7 +18,27 @@
     <string name="pro05">소프트웨어경영대학</string>
     <string name="pro06">융합과학대학</string>
     <string name="pro07">창의공과대학</string>
-    <string name="pro08">관광문화대학</string>
+
+    <string name="pro03_01">입체조형학과</string>
+    <string name="pro03_02">체육학과</string>
+    <string name="pro03_03">시큐리티매니지먼트</string>
+    <string name="pro03_04">시각정보디자인</string>
+    <string name="pro03_05">산업디자인</string>
+    <string name="pro03_06">장신구금속디자인</string>
+    <string name="pro03_07">Fine Arts</string>
+    <string name="pro03_08">스포츠과학</string>
+
+
+    <string name="pro07_01">건축학과</string>
+    <string name="pro07_02">전자공학과</string>
+    <string name="pro07_03">신소재공학</string>
+    <string name="pro07_04">환경에너지공학</string>
+    <string name="pro07_05">화학공학</string>
+    <string name="pro07_06">토목공학</string>
+    <string name="pro07_07">건축공학</string>
+    <string name="pro07_08">도시-교통공학</string>
+    <string name="pro07_09">기계시스템공학</string>
+    <string name="pro07_10">건축안전공학</string>
 
     <string name="bus1">기숙사정류장</string>
     <string name="bus2">매표소정류장</string>

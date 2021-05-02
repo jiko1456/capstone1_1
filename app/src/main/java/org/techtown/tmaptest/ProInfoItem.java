@@ -1,51 +1,34 @@
 package org.techtown.tmaptest;
 
 public class ProInfoItem {
-    String floor;
-    int floorPic1, floorPic2,floorPic3, floorPic4, floorPic5;
+    String name, phone, email;
 
-    public ProInfoItem(String floor, int floorPic1, int floorPic2, int floorPic3, int floorPic4, int floorPic5) {
-        this.floor = floor;
-        this.floorPic1 = floorPic1;
-        this.floorPic2 = floorPic2;
-        this.floorPic3 = floorPic3;
-        this.floorPic4 = floorPic4;
-        this.floorPic5 = floorPic5;
+    public ProInfoItem(String name, String phone, String email){
+        this.name=name;
+        this.phone=phone;
+        this.email=email;
     }
-
-    public ProInfoItem() {
-
+    // 이름
+    public String getName(){
+        return name;
     }
-
-
-    // 층 수 세팅.
-    public String getFloor() {
-        return floor;
+    public void setName(String name){
+        this.name=name;
     }
-    public void setFloor(String floor) {
-        this.floor = floor;
+    //번호
+    public String getPhone(){
+        return phone;
     }
-
-    // 층 수 별로 미리보기 아이콘 세팅.
-    public int getFloorPic1() {
-        return floorPic1;
+    public void setPhone(String phone){
+        this.phone=phone;
     }
-    public int getFloorPic2() {
-        return floorPic2;
+    //이메일
+    public String getEmail(){
+        return email;
     }
-    public int getFloorPic3() {
-        return floorPic3;
-    }
-    public int getFloorPic4() {
-        return floorPic4;
-    }
-    public int getFloorPic5() {
-        return  floorPic5;
+    public void setEmail(String email){
+        this.email=email;
     }
 
-    @Override
-    public String toString() {
-        return "RoomInfoItem{" +
-                "floor='" + floor + "\"" + "}";
-    }
+
 }

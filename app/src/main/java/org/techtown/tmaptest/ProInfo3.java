@@ -5,112 +5,124 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-public class FragmentProfessor extends Fragment implements onBackPressedListener {
-
-    //교수님 정보 버튼 (대학명 출력)
+public class ProInfo3 extends Fragment implements onBackPressedListener {
     private View view;
-    private Button pro01,pro02,pro03,pro04,pro05,pro06,pro07,pro08;
+    private Button button1, button2, button3,button4,button5,button6,button7,button8;
 
-    public FragmentProfessor(){
-
+    public ProInfo3() {
     }
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.activity_professor,container,false);
+        view = inflater.inflate(R.layout.activity_pro3, container, false);
 
-        //각 소속 대학 버튼
-        pro01 = view.findViewById(R.id.pro01);
-        pro01.setOnClickListener(new View.OnClickListener() {
+        //과 클릭
+        button1 = view.findViewById(R.id.pro03_01);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                ProInfo3_1 pro01= new ProInfo3_1();
-                transaction.replace(R.id.tmap,pro01);
+                ProInfo3_1 pro03_01 = new ProInfo3_1();
+                transaction.replace(R.id.tmap, pro03_01);
                 transaction.commit();
             }
         });
-        pro02 = view.findViewById(R.id.pro02);
-        pro02.setOnClickListener(new View.OnClickListener() {
+        button2 = view.findViewById(R.id.pro03_02);
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                ProInfo3_1 pro02= new ProInfo3_1();
-                transaction.replace(R.id.tmap,pro02);
+                ProInfo3_2 pro03_02 = new ProInfo3_2();
+                transaction.replace(R.id.tmap, pro03_02);
                 transaction.commit();
             }
         });
-        pro03 = view.findViewById(R.id.pro03);
-        pro03.setOnClickListener(new View.OnClickListener() {
+        button3 = view.findViewById(R.id.pro03_03);
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                ProInfo3 pro03= new ProInfo3();
-                transaction.replace(R.id.tmap,pro03);
+                ProInfo3_3 pro03_03 = new ProInfo3_3();
+                transaction.replace(R.id.tmap, pro03_03);
                 transaction.commit();
             }
         });
-        pro04 = view.findViewById(R.id.pro04);
-        pro04.setOnClickListener(new View.OnClickListener() {
+        button4 = view.findViewById(R.id.pro03_04);
+        button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                ProInfo3_1 pro04= new ProInfo3_1();
-                transaction.replace(R.id.tmap,pro04);
+                ProInfo3_4 pro03_04 = new ProInfo3_4();
+                transaction.replace(R.id.tmap, pro03_04);
                 transaction.commit();
             }
         });
-        pro05 = view.findViewById(R.id.pro05);
-        pro05.setOnClickListener(new View.OnClickListener() {
+        button5 = view.findViewById(R.id.pro03_05);
+        button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                ProInfo3_1 pro05= new ProInfo3_1();
-                transaction.replace(R.id.tmap,pro05);
+                ProInfo3_5 pro03_05 = new ProInfo3_5();
+                transaction.replace(R.id.tmap, pro03_05);
                 transaction.commit();
             }
         });
-        pro06 = view.findViewById(R.id.pro06);
-        pro06.setOnClickListener(new View.OnClickListener() {
+        button6 = view.findViewById(R.id.pro03_06);
+        button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                ProInfo3_1 pro06= new ProInfo3_1();
-                transaction.replace(R.id.tmap,pro06);
+                ProInfo3_6 pro03_06 = new ProInfo3_6();
+                transaction.replace(R.id.tmap, pro03_06);
                 transaction.commit();
             }
         });
-        pro07 = view.findViewById(R.id.pro07);
-        pro07.setOnClickListener(new View.OnClickListener() {
+        button7 = view.findViewById(R.id.pro03_07);
+        button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                ProInfo7 pro07= new ProInfo7();
-                transaction.replace(R.id.tmap,pro07);
+                ProInfo3_7 pro03_07 = new ProInfo3_7();
+                transaction.replace(R.id.tmap, pro03_07);
+                transaction.commit();
+            }
+        });
+        button8 = view.findViewById(R.id.pro03_08);
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                ProInfo3_8 pro03_08 = new ProInfo3_8();
+                transaction.replace(R.id.tmap, pro03_08);
                 transaction.commit();
             }
         });
 
-
-        return view;
+    return view;
     }
-    @Override
+
+
     public void onBackPressed() {
         goToMain();
     }
 
     //프래그먼트 종료
-    private void goToMain(){
+    private void goToMain() {
         FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
-        fragmentManager.beginTransaction().remove(FragmentProfessor.this).commit();
+        fragmentManager.beginTransaction().remove(ProInfo3.this).commit();
         fragmentManager.popBackStack();
     }
 }
+
+
+
+
+

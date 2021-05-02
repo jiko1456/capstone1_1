@@ -31,14 +31,13 @@
 
         <GridLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="404dp"
             android:layout_gravity="center"
+            android:layout_marginBottom="120dp"
             android:background="@drawable/layout_background"
             android:columnCount="1"
             android:orientation="horizontal"
-            android:layout_marginBottom="120dp"
-            android:scrollbars="vertical"
-            >
+            android:scrollbars="vertical">
 
             <Button
                 android:id="@+id/pro01"
@@ -112,17 +111,6 @@
                 android:background="#00ff0000"
                 android:onClick="onClick"
                 android:text="@string/pro07"
-                android:textSize="20sp" />
-
-            <Button
-                android:id="@+id/pro08"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="#00ff0000"
-                android:onClick="onClick"
-                android:text="@string/pro08"
                 android:textSize="20sp" />
 
 
